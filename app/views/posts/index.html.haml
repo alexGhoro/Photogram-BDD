@@ -1,2 +1,4 @@
-%h1 Photogram
+-@posts.each do |post|
+  =link_to (image_tag post.image.url(:medium)) , post_path(post)
+  =post.caption
 =link_to "New Post", new_post_path

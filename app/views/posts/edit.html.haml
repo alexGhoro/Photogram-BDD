@@ -1,0 +1,7 @@
+= simple_form_for @post do |f|
+  = f.input :image
+  = f.input :caption
+  = f.button :submit
+  = link_to "Delete Post", post_path(@post), method: :delete
+
+
